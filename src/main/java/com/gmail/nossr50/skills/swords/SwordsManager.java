@@ -61,7 +61,7 @@ public class SwordsManager extends SkillManager {
      * @param target The defending entity
      */
     public void processRupture(@NotNull LivingEntity target) {
-        if(!canUseRupture())
+        if(!canUseRupture() || target instanceof Player)
             return;
 
         if(target.hasMetadata(MetadataConstants.METADATA_KEY_RUPTURE)) {
@@ -114,7 +114,7 @@ public class SwordsManager extends SkillManager {
 
         if(rank > 0)
         {
-            return (1.0D + (rank * 1.5));
+            return (1.0D + (rank * 1.1));
         }
 
         return 0;

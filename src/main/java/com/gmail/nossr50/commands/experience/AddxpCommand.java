@@ -50,6 +50,6 @@ public class AddxpCommand extends ExperienceCommand {
         if(isSilent)
             return;
 
-        player.sendMessage(LocaleLoader.getString("Commands.addxp.AwardSkill", value, mcMMO.p.getSkillTools().getLocalizedSkillName(skill)));
+//        player.sendMessage(LocaleLoader.getString("Commands.addxp.AwardSkill", value, mcMMO.p.getSkillTools().getLocalizedSkillName(skill)));
     }
 }
